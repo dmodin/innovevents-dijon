@@ -20,6 +20,6 @@ const sassTask = gulp.task('sass');
 gulp.task('watch', function () {
     gulp.watch('public/scss/**/*.scss', gulp.series(['sass']));
 });
-const watchTask= gulp.task('watch');
+const watchTask = gulp.task('watch');
 
 exports.build = gulp.series(sassTask, watchTask);
